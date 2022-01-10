@@ -2,7 +2,7 @@ search_btn.addEventListener("click",getImg);
 function getImg(){
 fetch('https://www.themealdb.com/api/json/v1/1/search.php').then((data)=>{
     // console.log(data);
-    return data.json();
+    return data.text();
 }).then((completedata)=>{
     // console.log(completedata);
     let data1="";
